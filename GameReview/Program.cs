@@ -52,9 +52,9 @@ if (!string.IsNullOrEmpty(title) && !string.IsNullOrEmpty(reviewContent))
 
 // Delete single record
 Console.WriteLine("Press 'y' to remove the current game review or any other key to preserve it");
-ConsoleKeyInfo cki = Console.ReadKey();
+ConsoleKeyInfo RevKey = Console.ReadKey();
 
-if (cki.Key.ToString().ToLower() == "y")
+if (RevKey.Key.ToString().ToLower() == "y")
 {
     if (!string.IsNullOrEmpty(name))
     {
